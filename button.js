@@ -7,13 +7,6 @@ function g_obj(id)
     return document.getElementById(id);
 }
 
-// function Main()
-// {
-//     var tx=g_obj("result").value;
-//     document.getElementById("result").innerText = tx;
-//     sum=tx;
-// }
-
 function kc(e)
 {
     //space
@@ -116,3 +109,4 @@ function Riset()
 {
     sum=0;
 }
+
