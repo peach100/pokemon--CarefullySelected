@@ -8,21 +8,49 @@
 .main
 {
     width:200px;
-    height:80px;
-    font-size:30px;
-    text-align: end;
+    height:60px;
+    font-size:40px;
+    text-align: right;
     background-color:#ffe0ff;
+    margin: auto;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .buton
 {
-    width:100px; 
-    height:50px
+    width:100px;
+    height:50px;
+    border-radius: 20px;
+    font-size: 25px;
+    border-width: 4px;
 }
+#plus
+{
+    color: dodgerblue;
+    border-color: dodgerblue;
+
+}
+#minus
+{
+    color: crimson;
+    border-color: crimson;
+}
+
 #inputNum
 {
     width:200px;
     height:100px;
 }
+
+#probability
+{
+    text-align:center;
+    font-size: 20px;
+}
+
+
 body
 {
     background-color:#263238;
@@ -35,8 +63,13 @@ p
 {
     color:white;
 }
+div
+{
+    text-align: center;
+}
 input.chbox+label
 {
     color:white;
+    font-size: 20px;
 }
 
