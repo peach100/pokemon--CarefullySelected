@@ -60,7 +60,7 @@ function probability()
 
    var str="色違い確率:約"+s+"%\n出現確率:1/"+pro;
 
-    g_obj("probability").textContent=str;
+    g_obj("probability").innerText=str;
 }
 //切り捨て 10で第1 100で第2 1000で第3
 function Floor(s)
