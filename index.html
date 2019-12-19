@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <title>【ポケモン】色違い粘りカウント</title>
         <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0″>
+        <title>【ポケモン】色違い粘りカウント</title>
         <link rel="stylesheet" href="button.css">
         <script src="button.js">
         </script>
     </head>
 
     <body onload="play()">
-        <h1>カウントするだけ</h1>
+        <h1 align="center">カウントするだけ</h1>
         <p id="probability"></p>
-    <table border="1">
-        <tr>
-            <td class="main" id="result"></td>
+    <table >
+        <tr align="center">
+            <td class="main" id="result" valign="middle"></td>
         </tr>
     </table>
-        <INPUT type="submit" name="button1" value="+" class="buton"  language="javascript" onclick="Plus();play();">
-        <INPUT type="submit" name="button1" value="-" class="buton" language="javascript" onclick="Minus();play();">  
-        <INPUT type="submit" name="button1" value="Riset"class="buton" language="javascript" onclick="Riset();play();">
-        <input type="submit" value=" 反映 " onclick="play();" class="buton">
+    <p><br><br><br></p>
+       <div> <input type="submit" name="button1" id="plus" value="+" class="buton"  language="javascript" onclick="Plus();play();">
+        <input type="submit" name="button1" id="minus" value="-" class="buton" language="javascript" onclick="Minus();play();">  
+        <input type="submit" name="button1" value="Riset"class="buton" language="javascript" onclick="Riset();play();"></div>
+        <!-- <input type="submit" value=" 反映 " onclick="play();" class="buton"> -->
+        <p></p>
             <form name="form1">
-                <input type="checkbox" class="chbox" name="amulet" value="ひかるおまもり"  onclick="Check()"/>
-                <label for=checkbox>ひかるおまもり<br></label>
+            <div><input type="checkbox" class="chbox" name="amulet" value="ひかるおまもり"  onclick="Check();play();"/>
+                <label for="checkbox">ひかるおまもり<br></label>
 
-                <input type="checkbox" class="chbox" name="inter" value="国際孵化" onclick="Check()">
-                <label for=checkbox>国際孵化<br></label>
+                <input type="checkbox" class="chbox" name="inter" value="国際孵化" onclick="Check();play()">
+                <label for="checkbox">国際孵化<br></label>
+            </div>
             </form>
-                <p>※(↑,+) (↓,-)キーでも加算減算できます</p>
+        <div>
+            <p>※(↑,+) (↓,-)キーでも加算減算できます</p>
+        </div>
             <script>
             addEventListener("keydown",Shortcuts)
 
